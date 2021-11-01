@@ -1,11 +1,11 @@
 <div class="card w-100 my-5">
     <div class="card-body">
         <h1 class="card-title text-center">Cadastro de Desenvolvedores</h1>
-        <form>
+        <form [formGroup]="userForm">
             <div class="row my-4">
                 <div class="col-12">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome">
+                        <input type="text" class="form-control" formControlName="nome" id="nome" placeholder="Digite o seu nome">
                         <label for="nome">Nome</label>
                     </div>
                 </div>
@@ -13,7 +13,7 @@
             <div class="row my-4">
                 <div class="col-12">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="sexo" placeholder="Digite o seu sexo">
+                        <input type="text" class="form-control" formControlName="sexo" id="sexo" placeholder="Digite o seu sexo">
                         <label for="sexo">Sexo</label>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
             <div class="row my-4">
                 <div class="col-12">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="idade" placeholder="Digite a sua idade">
+                        <input type="text" class="form-control" formControlName="idade" id="idade" placeholder="Digite a sua idade">
                         <label for="idade">Idade</label>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
             <div class="row my-4">
                 <div class="col-12">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="hobby" placeholder="Digite o seu hobby">
+                        <input type="text" class="form-control" formControlName="hobby" id="hobby" placeholder="Digite o seu hobby">
                         <label for="hobby">Hobby</label>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
             <div class="row my-4">
                 <div class="col-12">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="datanascimento" placeholder="Digite a data do seu nascimento">
+                        <input type="text" class="form-control" formControlName="datanascimento" id="datanascimento" placeholder="Digite a data do seu nascimento">
                         <label for="datanascimento">Data de Nascimento</label>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
             <div class="row my-4">
                 <div class="form-group col-12 mt-4">
                     <button type="button" class="btn btn-outline-danger float-start">Cancelar</button>
-                    <button type="button" class="btn btn-outline-success float-end">Enviar</button>
+                    <button type="button" class="btn btn-outline-success float-end" (click)="createUser()">Enviar</button>
                 </div>
             </div>
         </form>
