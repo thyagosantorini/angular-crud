@@ -10,8 +10,7 @@ export class UserService {
   apiUrl = 'https://sheet.best/api/sheets/c48e73ca-6370-4a9b-9129-c6e6d868f394';
   httpOptions = {
     headers: new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Token': '123456789'
+      'Content-Type': 'application/json'
     })
   }
 
@@ -24,8 +23,13 @@ export class UserService {
     return this.httpClient.get<User[]>(this.apiUrl);
   }
 
-  // Salva o Usuário no Banco - CREATE
+  // Salva o Usuário no Banco de Dados - CREATE
   postUser(user: User):Observable<User> {
     return this.httpClient.post<User>(this.apiUrl, user, this.httpOptions)
+  }
+
+  // Exclui o Usuário do Banco de Dados - DELETE
+  deleteUSer(id: number):Observable<User> {
+    return this.httpClient.delete<User>(`${this.apiUrl}/id/${id}`)
   }
 }
