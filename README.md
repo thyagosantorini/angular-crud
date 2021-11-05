@@ -2,7 +2,7 @@
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 12.2.12.
 
-![](https://github.com/thyagosantorini/angular-crud/tree/main/src/assets/img/print.png)
+![](https://github.com/thyagosantorini/angular-crud/blob/main/src/assets/img/print.png)
 
 ## Sobre o Projeto
 
