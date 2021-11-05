@@ -1,0 +1,44 @@
+<div id="layoutSidenav">
+    <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+            <div class="sb-sidenav-menu">
+                <div class="nav">
+                    <div class="sb-sidenav-menu-heading">Usuários</div>
+                    <a class="nav-link" routerLink="/form">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
+                        Cadastrar Novo
+                    </a>
+                    <a class="nav-link" routerLink="/">
+                        <div class="sb-nav-link-icon"><i class="fa fa-refresh"></i></div>
+                        Listar
+                    </a>
+                </div>
+            </div>
+            <div class="sb-sidenav-footer">
+                <div class="small">Logged in as:</div>
+                Thyago Santorini
+            </div>
+        </nav>
+    </div>
+    <div id="layoutSidenav_content">
+        <section class="container d-flex align-items-center justify-content-center">
+            <div class="row w-100">
+              <div class="col-12">
+                <router-outlet></router-outlet>
+              </div>
+            </div>
+          </section>
+        <footer class="py-4 bg-light mt-auto">
+            <div class="container-fluid px-4">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; Thyago Santorini 2021</div>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                        &middot;
+                        <a href="#">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
