@@ -1,27 +1,29 @@
-# AngularCrud
+# Cadastro de Usuários - Angular SPA
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 12.2.12.
 
-## Development server
+![](https://github.com/thyagosantorini/angular-crud/tree/main/src/assets/img/print.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Sobre o Projeto
 
-## Code scaffolding
+O projeto é uma SPA (Single-Page-Application) de **Cadastro de Desenvolvedores** onde é possível **criar**, **listar**, **atualizar**, e **apagar** todos os usuários.  Mais Detalhes abaixo:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- SPA feito em Angular;
+- Foi criado os componentes **header** e **sidenav** para o menu superior e lateral da aplicação.
+- Criado o Component **user-list**, onde sera exibida a lista de desenvolvedores. 
+- Criado o Component **user-form**, que é o formulário para armazernar e alterar os desenvolvedores.
+- Foram utilizados o métodos **GET**, **POST**, **PUT** e **DELETE**.
+- Os dados são requisitados da [Sheet Best](https://sheet.best/), que é um serviço que transforma planilhas (gsheet ou csv) em APIs REST.
 
-## Build
+## Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para rodar o projeto é preciso ter o **NodeJS**, **NPM** e o **Angular CLI** instalados em sua máquina.
 
-## Running unit tests
+## Execução
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para executar o projeto em sua maquina, você precisará da pasta **node_modules**. Então você tera que executar o comando `npm install`. Em seguida execute o comando `ng serve` ou `npm start` para executar o projeto. Navegue por  `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
-## Running end-to-end tests
+- Para ver aplicação rodando online, acesse: https://angularcrud.thyagosantorini.com/
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
